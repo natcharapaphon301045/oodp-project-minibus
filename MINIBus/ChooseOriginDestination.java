@@ -12,11 +12,11 @@ public class ChooseOriginDestination {
         for (int i = 0; i < stations.length; i++) {
             System.out.println((i+1) + ". " + stations[i]);
         }
-        System.out.println("Select original stutation");
+        System.out.print("Select original stutation: ");
         /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-
+        /*--------------------------------------Output-------------------------------------------------------------------------------*/
         try {
             int selection = Integer.parseInt(input);
             if (selection > 0 && selection <= stations.length) {
@@ -39,11 +39,11 @@ public class ChooseOriginDestination {
         for (int i = 0; i < stations.length; i++) {
             System.out.println((i+1) + ". " + stations[i]);
         }
-        System.out.println("Select destination stutation");
+        System.out.print("Select destination stutation: ");
         /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-
+        /*--------------------------------------Output-------------------------------------------------------------------------------*/
         try {
             int selection = Integer.parseInt(input);
             if (selection > 0 && selection <= stations.length) {
