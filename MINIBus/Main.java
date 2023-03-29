@@ -14,17 +14,20 @@ public class Main {
         // Call the ChooseDestination method with a sample string argument
         boolean destinationResult = originDestination.ChooseDestination("sample destination string");
 
-        // Create an instance of the Selectseat class
+        // Call the Selectseat Class max20 seat
         Selectseat selectSeat = new Selectseat(20);
 
-        // Call the Selectseat constructor with the number of available seats
-        // This example assumes that there are 20 available seats in the bus
+        // Call SelectDateAndTime Class
 
-        // Note that you can adjust the number of available seats as needed by changing the argument value
+         // Call fillInformation class
+         fillInformation info = new fillInformation();
+         info.fillPersonalInformation();
+         boolean confirm = info.confirmInformation();
+
+        // Call Print all information
         
-        //Print the results to the console
-        /*System.out.println("Your origin station: "+originResult);
-        System.out.println("Your destination station: "+destinationResult);
-        */
+
+        
+        
     }
 }

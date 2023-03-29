@@ -7,55 +7,59 @@ public class ChooseOriginDestination {
     public boolean ChooseOrigin(String oString) {
         String[] stations = StationArray();
         
-        System.out.println("the riginal stutation");
+        while(true){
+            System.out.println("The Original Stutation");
         /*--------------------------------------Print array station information------------------------------------------------------*/
-        for (int i = 0; i < stations.length; i++) {
-            System.out.println((i+1) + ". " + stations[i]);
-        }
-        System.out.print("Select original stutation: ");
-        /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        /*--------------------------------------Output-------------------------------------------------------------------------------*/
-        try {
-            int selection = Integer.parseInt(input);
-            if (selection > 0 && selection <= stations.length) {
-                System.out.println("You selected: " + stations[selection-1]);
-            } else {
-                System.out.println("Invalid selection.");
+            for (int i = 0; i < stations.length; i++) {
+                System.out.println((i+1) + ". " + stations[i]);
             }
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a number.");
+            System.out.print("Select original stutation: ");
+        /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.nextLine();
+        /*--------------------------------------Output-------------------------------------------------------------------------------*/
+            try {
+                int selection = Integer.parseInt(input);
+                if (selection > 0 && selection <= stations.length) {
+                    System.out.println("You selected: " + stations[selection-1]);
+                    break;
+                } else {
+                    System.out.println("please select ????");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a number.");
+            }
         }
-        
-        return true;
+            return true;
     }
     /*------------------------------------------1.2 Choose the Destination----------------------------------------------------------------------------------*/
     public boolean ChooseDestination(String oString){
         String[] stations = StationArray();
 
-        System.out.println("the Destination stutation");
+        while(true){
+            System.out.println("the Destination stutation");
         /*--------------------------------------Print array station information------------------------------------------------------*/
-        for (int i = 0; i < stations.length; i++) {
-            System.out.println((i+1) + ". " + stations[i]);
-        }
-        System.out.print("Select destination stutation: ");
-        /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        /*--------------------------------------Output-------------------------------------------------------------------------------*/
-        try {
-            int selection = Integer.parseInt(input);
-            if (selection > 0 && selection <= stations.length) {
-                System.out.println("You selected: " + stations[selection-1]);
-            } else {
-                System.out.println("Invalid selection.");
+            for (int i = 0; i < stations.length; i++) {
+                System.out.println((i+1) + ". " + stations[i]);
             }
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a number.");
+            System.out.print("Select destination stutation: ");
+        /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.nextLine();
+        /*--------------------------------------Output-------------------------------------------------------------------------------*/
+            try {
+                int selection = Integer.parseInt(input);
+                if (selection > 0 && selection <= stations.length) {
+                    System.out.println("You selected: " + stations[selection-1]);
+                    break;
+                } else {
+                    System.out.println("please select only ???");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a number.");
+            }
         }
-        
-        return true;
+            return true;
     }
     /*------------------------------------------Array--------------------------------------------------------------------------------------------------------*/
     public String[]StationArray() {
