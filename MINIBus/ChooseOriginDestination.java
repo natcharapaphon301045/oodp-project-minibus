@@ -62,7 +62,7 @@ public class ChooseOriginDestination {
             return true;
     }
     /*------------------------------------------Array--------------------------------------------------------------------------------------------------------*/
-    public String[]StationArray() {
+    public String[]StationArray() {/*need to change to collection but not now */
         String[] stations = new String[10];
         stations[0] = "station 1 "+Integer.toString(100)+" Baht";
         stations[1] = "station 2 "+Integer.toString(200)+" Baht";
