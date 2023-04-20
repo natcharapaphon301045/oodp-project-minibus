@@ -19,15 +19,15 @@ public class Main {
 
         // Call SelectDateAndTime Class
 
-         // Call fillInformation class
-         fillInformation info = new fillInformation();
-         info.fillPersonalInformation();
-         boolean confirm = info.confirmInformation();
+        // Call fillInformation class
+        fillInformation info = new fillInformation();
+        String[] personalInfo = info.fillPersonalInformation();
+        boolean confirm = info.confirmInformation();
 
-        // Call Print all information
-        
-
-        
-        
+        // Print all information
+        System.out.println("----------");
+        System.out.println("Name: " + personalInfo[0]);
+        System.out.println("Phone: " + personalInfo[1]);
+        System.out.println("Email: " + personalInfo[2]);
     }
 }

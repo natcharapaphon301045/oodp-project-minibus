@@ -1,29 +1,29 @@
 package MINIBus;
 import java.util.Scanner;
+
 /*-----------------------------------------3. Select seat number (Max 20 seats)------------------------------------------------------------------------------*/
 
 /*-----------------------------------------Selectseat Class--------------------------------------------------------------------------------------------------*/
 public class Selectseat {
-    private int numSeats;
+    private String seatNumber;
 
-    public Selectseat(int numSeats){
-        int seatNumber;
-        
-
-        /*----------------------------------------------While Seat = false-----------------------------------------------------------------------*/
+    public Selectseat(int maxSeats){
+        Scanner scanner = new Scanner(System.in);
         while(true){
-            System.out.print("Enter seat number (Max20): ");
-            Scanner scanner = new Scanner(System.in);/*-----------------scan keyboard----------------------------------------------------------------------------*/
-            seatNumber = scanner.nextInt();
+            System.out.print("Enter seat number (Max " + maxSeats + " seats): ");
+            int num = scanner.nextInt();
         
-            if(seatNumber<=20&&seatNumber>0){
+            if(num <= maxSeats && num > 0){
+                seatNumber = String.valueOf(num);
                 System.out.println("Your seat no. = " + seatNumber);
-                break;/*------------------------------------------------exit the loop------------------------------------------------------------*/
-            }else{
-                System.out.println("please select only 1-20");
+                break;
+            } else {
+                System.out.println("Please select only 1-" + maxSeats + " seats.");
             }
         }
-        
-           
+    }
+
+    public String getSeatNumber(){
+        return seatNumber;
     }
 }
