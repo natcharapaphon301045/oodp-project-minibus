@@ -9,7 +9,7 @@ public class Selectseat {
     public Selectseat(int maxSeats){
         Scanner scanner = new Scanner(System.in);
 
-        /*----------------------------------------------While Seat = false-----------------------------------------------------------------------*/
+        /*----------------------------------------------While Seat = true-----------------------------------------------------------------------*/
         while(true){
             System.out.print("Enter seat number (Max " + maxSeats + " seats): ");
             int seatNumber = scanner.nextInt();

@@ -24,7 +24,7 @@ public class ChooseOriginDestination {
                     System.out.println("You selected: " + stations[selection-1]);
                     break;
                 } else {
-                    System.out.println("please select ????");
+                    System.out.println("please select only station 1 to station "+ stations.length);
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number.");
@@ -53,7 +53,7 @@ public class ChooseOriginDestination {
                     System.out.println("You selected: " + stations[selection-1]);
                     break;
                 } else {
-                    System.out.println("please select only ???");
+                    System.out.println("please select only station 1 to station "+ stations.length);
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter a number.");

@@ -16,9 +16,8 @@ public class Main {
 
         // Call the Selectseat Class max20 seat
         Selectseat selectSeat = new Selectseat(20);
-        int selectedSeat = selectSeat.getSeatNumber();
-        System.out.println("Selected Seat: " + selectedSeat);
-
+        // Get the selected seat number
+        int seatNumber = selectSeat.getSeatNumber();
         // Call SelectDateAndTime Class
 
         // Call fillInformation class
@@ -31,6 +30,6 @@ public class Main {
         System.out.println("Name: " + personalInfo[0]);
         System.out.println("Phone: " + personalInfo[1]);
         System.out.println("Email: " + personalInfo[2]);
-        System.out.println("Selected Seat: " + selectedSeat);
+        System.out.println("Seat Number: "+ seatNumber);
     }
 }
