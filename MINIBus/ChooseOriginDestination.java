@@ -1,8 +1,6 @@
 package MINIBus;
 import java.util.Scanner;
 
-import javax.lang.model.util.Elements.Origin;
-
 /*---------------------------------------------1. Choose the origin and destination------------------------------------------------------------------------*/
 public class ChooseOriginDestination {
     private int origin;

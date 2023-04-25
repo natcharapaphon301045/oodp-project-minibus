@@ -21,7 +21,7 @@ public class Main {
         // Call fillInformation class
         fillInformation info = new fillInformation();
         String[] personalInfo = fillInformation.fillPersonalInformation();
-        boolean confirm = fillInformation.confirmInformation();
+        String[] confirm = fillInformation.confirmInformation();
 
         // Call the PrintAllinfo class to display all information
         PrintAllinfo.print(personalInfo, seatNumber, amount);

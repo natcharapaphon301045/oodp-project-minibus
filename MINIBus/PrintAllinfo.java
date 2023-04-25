@@ -7,6 +7,8 @@ public class PrintAllinfo {
         System.out.println("Phone: " + personalInfo[1]);
         System.out.println("Email: " + personalInfo[2]);
         System.out.println("Seat Number: "+ seatNumber);
+        
         System.out.println("Fare Amount: "+ amount);
     }
 }
+
