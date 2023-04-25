@@ -25,11 +25,7 @@ public class Main {
         String[] personalInfo = info.fillPersonalInformation();
         boolean confirm = info.confirmInformation();
 
-        // Print all information
-        System.out.println("----------");
-        System.out.println("Name: " + personalInfo[0]);
-        System.out.println("Phone: " + personalInfo[1]);
-        System.out.println("Email: " + personalInfo[2]);
-        System.out.println("Seat Number: "+ seatNumber);
+        // Call the PrintAllinfo class to display all information
+        PrintAllinfo.print(personalInfo, seatNumber);
     }
 }
