@@ -1,8 +1,15 @@
 package MINIBus;
 import java.util.Scanner;
 
+import javax.lang.model.util.Elements.Origin;
+
 /*---------------------------------------------1. Choose the origin and destination------------------------------------------------------------------------*/
 public class ChooseOriginDestination {
+    private int origin;
+    private static int Originfare=0;
+    private int destination;
+    private static int destinationfare=0;
+    private static int amount =0;
     /*------------------------------------------1.1 Choose the original------------------------------------------------------------------------------------*/
     public boolean ChooseOrigin(String oString) {
         String[] stations = StationArray();
@@ -21,7 +28,10 @@ public class ChooseOriginDestination {
             try {
                 int selection = Integer.parseInt(input);
                 if (selection > 0 && selection <= stations.length) {
-                    System.out.println("You selected: " + stations[selection-1]);
+                    origin = selection;
+                    Originfare=100*origin;
+                    System.out.print("You selected: " + origin+" ");
+                    System.out.print(Originfare+" Bath");
                     break;
                 } else {
                     System.out.println("please select only station 1 to station "+ stations.length);
@@ -50,7 +60,10 @@ public class ChooseOriginDestination {
             try {
                 int selection = Integer.parseInt(input);
                 if (selection > 0 && selection <= stations.length) {
-                    System.out.println("You selected: " + stations[selection-1]);
+                    destination = selection;
+                    destinationfare=100*destination;
+                    System.out.print("You selected: " + destination+" ");
+                    System.out.print(destinationfare+" Bath");
                     break;
                 } else {
                     System.out.println("please select only station 1 to station "+ stations.length);
@@ -61,8 +74,18 @@ public class ChooseOriginDestination {
         }
             return true;
     }
+    
+    public static int calculateFareAmount() {
+        amount = Originfare + destinationfare;
+        println("Your Amount "+amount);
+        return amount;
+    }
+    
+    
+    private static void println(String string) {
+    }
     /*------------------------------------------Array--------------------------------------------------------------------------------------------------------*/
-    public String[]StationArray() {/*need to change to collection but not now */
+     public String[]StationArray() {/*need to change to collection but not now */
         String[] stations = new String[10];
         stations[0] = "station 1 "+Integer.toString(100)+" Baht";
         stations[1] = "station 2 "+Integer.toString(200)+" Baht";
@@ -78,4 +101,3 @@ public class ChooseOriginDestination {
     }
     /*------------------------------------------Array--------------------------------------------------------------------------------------------------------*/
 }
-

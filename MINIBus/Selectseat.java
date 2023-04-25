@@ -27,4 +27,5 @@ public class Selectseat {
     public int getSeatNumber() {
         return NumSeats;
     }
+    
 }
