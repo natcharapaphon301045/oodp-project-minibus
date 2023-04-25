@@ -14,14 +14,17 @@ public class Main {
         Selectseat selectSeat = new Selectseat(20);
         // Get the selected seat number
         int seatNumber = selectSeat.getSeatNumber();
-        
+
         // Call the calculateFareAmount method to get the fare amount
         int amount = ChooseOriginDestination.calculateFareAmount();
-        
+
         // Call fillInformation class
-        fillInformation info = new fillInformation();
         String[] personalInfo = fillInformation.fillPersonalInformation();
-        String[] confirm = fillInformation.confirmInformation();
+        String[] confirmedInfo = fillInformation.confirmInformation();
+        System.out.println("Confirmed information:");
+        for (String info : confirmedInfo) {
+            System.out.println(info);
+        }
 
         // Call the PrintAllinfo class to display all information
         PrintAllinfo.print(personalInfo, seatNumber, amount);
