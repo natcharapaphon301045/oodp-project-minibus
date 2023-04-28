@@ -98,4 +98,20 @@ public class ChooseOriginDestination {
         return stations;
     }
     /*------------------------------------------Array--------------------------------------------------------------------------------------------------------*/
+    public int getOrigin() {
+        return origin;
+    }
+    
+    public int getOriginFare() {
+        return Originfare;
+    }
+    
+    public int getDestination() {
+        return destination;
+    }
+    
+    public int getDestinationFare() {
+        return destinationfare;
+    }
+    
 }
