@@ -62,16 +62,6 @@ public static void main(String[] args) {
             System.out.println((i + 1) + ". " + formattedTime);
         }
   /*------------------------------------------------------------------------------------------------*/
-        for (int i = 0; i < TimeSlot.length; i++) {
-            LocalTime timeSlot = TimeSlot[i];
-            LocalDateTime startTime = timeSlot.atDate(currentTime.toLocalDate());
-
-            if (startTime.isAfter(currentTime)) {
-                String formattedTime = timeSlot.format(TIME_FORMATTER);
-                System.out.println((i + 1) + ". " + formattedTime);
-            }
-        }
-
         Scanner scanner = new Scanner(System.in);
         int selectedTimeSlotNumber = -1;
 
