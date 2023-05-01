@@ -17,10 +17,9 @@ public class Main {
         int seatNumber = selectSeat.getSeatNumber();
         
         // Call SelectDateAndTime class
-        //SelectDateAndTime selectDateAndTime = new SelectDateAndTime();
-        //SelectDateAndTime.SelectDate(null);
-
-        
+        // Call SelectDateAndTime class
+        SelectDateAndTime.selectDate();
+        SelectDateAndTime.selectTimeSlot();
 
         // Call the calculateFareAmount method to get the fare amount
         int amount = ChooseOriginDestination.calculateFareAmount();
