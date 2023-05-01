@@ -1,8 +1,6 @@
 package MINIBus;
 
 public class Main {
-
-
     public static void main(String[] args) {
         System.out.println("MINIbus program");
 
@@ -15,8 +13,7 @@ public class Main {
         Selectseat selectSeat = new Selectseat(20);
         // Get the selected seat number
         int seatNumber = selectSeat.getSeatNumber();
-        
-        // Call SelectDateAndTime class
+
         // Call SelectDateAndTime class
         SelectDateAndTime.selectDate();
         SelectDateAndTime.selectTimeSlot();
@@ -26,11 +23,10 @@ public class Main {
 
         // Call fillInformation class
         String[] personalInfo = fillInformation.fillPersonalInformation();
-       
 
-        
         // Call the PrintAllinfo class to display all information
-        PrintAllinfo.print(personalInfo, seatNumber, chooseOD.getOrigin(), chooseOD.getOriginFare(), chooseOD.getDestination(), chooseOD.getDestinationFare(), amount);
-
+        PrintAllinfo.print(personalInfo, seatNumber, chooseOD.getOrigin(), chooseOD.getOriginFare(),
+                chooseOD.getDestination(), chooseOD.getDestinationFare(), amount/*, SelectDateAndTime.getSelectedTimeSlot(),
+                SelectDateAndTime.getSelectedDate() */);
     }
 }
