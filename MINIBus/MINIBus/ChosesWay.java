@@ -1,7 +1,7 @@
 package MINIBus;
 import java.util.Scanner;
 public class ChosesWay {
-    
+    /*----------------------------------------------------------------dont use class---------------------------------------------------------- */
     private String origin;
     private int Originfare=0;
     private String destination;

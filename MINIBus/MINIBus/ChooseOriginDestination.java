@@ -13,12 +13,12 @@ public class ChooseOriginDestination {
         String[] stations = StationArray();
         
         while(true){
-            System.out.println("The Original Stutation");
+            System.out.println("The Original Station");
         /*--------------------------------------Print array station information------------------------------------------------------*/
             for (int i = 0; i < stations.length; i++) {
                 System.out.println((i+1) + ". " + stations[i]);
             }
-            System.out.print("Select original stutation: ");
+            System.out.print("Select original station: ");
         /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
@@ -47,12 +47,12 @@ public class ChooseOriginDestination {
         while(true){
             System.out.println("");
             System.out.println("----------");
-            System.out.println("the Destination stutation");
+            System.out.println("the Destination station");
         /*--------------------------------------Print array station information------------------------------------------------------*/
             for (int i = 0; i < stations.length; i++) {
                 System.out.println((i+1) + ". " + stations[i]);
             }
-            System.out.print("Select destination stutation: ");
+            System.out.print("Select destination station: ");
         /*--------------------------------------ADD keyboard reading-----------------------------------------------------------------*/
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
