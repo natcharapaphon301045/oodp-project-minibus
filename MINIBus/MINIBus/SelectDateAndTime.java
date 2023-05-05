@@ -26,6 +26,8 @@ public class SelectDateAndTime {
     };
 
     public static LocalDate selectDate() {
+        System.out.println("");
+        System.out.println("----------");
         LocalDate today = LocalDate.now();
         System.out.println("Today is " + today);
     

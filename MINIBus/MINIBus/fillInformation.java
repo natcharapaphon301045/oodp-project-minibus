@@ -7,6 +7,8 @@ public class fillInformation {
 
     /*--------------------------------------4.1.1 Fill personal information---------------------------------------------------------------------*/
     public static String[] fillPersonalInformation() {
+        System.out.println("");
+        System.out.println("----------");
         Scanner scanner = new Scanner(System.in);
         
         while (loop) {

@@ -45,6 +45,8 @@ public class ChooseOriginDestination {
         String[] stations = StationArray();
 
         while(true){
+            System.out.println("");
+            System.out.println("----------");
             System.out.println("the Destination stutation");
         /*--------------------------------------Print array station information------------------------------------------------------*/
             for (int i = 0; i < stations.length; i++) {

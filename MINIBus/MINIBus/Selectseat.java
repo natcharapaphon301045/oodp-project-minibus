@@ -11,6 +11,8 @@ public class Selectseat {
 
         /*----------------------------------------------While Seat = true-----------------------------------------------------------------------*/
         while(true){
+            System.out.println("");
+            System.out.println("----------");
             System.out.print("Enter seat number (Max " + maxSeats + " seats): ");
             int seatNumber = scanner.nextInt();
         
