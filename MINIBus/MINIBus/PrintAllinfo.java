@@ -13,6 +13,7 @@ public class PrintAllinfo {
         //System.out.println("Departure Date: " + departureDate);
         //System.out.println("Departure Time Slot: " + SelectDateAndTime.getSelectedTimeSlot());
         System.out.println("Fare Amount: " + amount);
-        System.out.println("Prompay 061-xxx-xxxx");
+        System.out.println("Payment channel");
+        System.out.println("Kasikornbank: 049-x-xxxxx-x");
     }
 }

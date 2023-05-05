@@ -29,7 +29,7 @@ public class ChooseOriginDestination {
                     origin = selection;
                     Originfare=100*origin;
                     System.out.print("You selected: " + origin+" ");
-                    System.out.print(Originfare+" Bath");
+                    System.out.print(Originfare+" Baht");
                     break;
                 } else {
                     System.out.println("please select only station 1 to station "+ stations.length);
@@ -63,7 +63,7 @@ public class ChooseOriginDestination {
                     destination = selection;
                     destinationfare=100*destination;
                     System.out.print("You selected: " + destination+" ");
-                    System.out.print(destinationfare+" Bath");
+                    System.out.print(destinationfare+" Baht");
                     break;
                 } else {
                     System.out.println("please select only station 1 to station "+ stations.length);

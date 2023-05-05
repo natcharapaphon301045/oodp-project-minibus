@@ -2,7 +2,7 @@ package MINIBus;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("MINIbus program");
+        System.out.println("Minibus Ticket Booking System");
 
         // Call ChooseOriginDestination Class
         ChooseOriginDestination chooseOD = new ChooseOriginDestination();
